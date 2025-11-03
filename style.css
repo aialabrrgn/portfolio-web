@@ -32,6 +32,7 @@
 }
 
 
+/* index.html */
 .fondo {
     width: 100%;
     min-height: 100vh;
@@ -116,4 +117,29 @@
         opacity: 1;
         transform: translateX(0px);
     }
+}
+
+/* proyectos.html */
+
+.container__proyectos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.proyectos__h1{
+    color: var(--color-oscuro);
+    font-family: harabara;
+    font-size: 56px;
+}
+
+.lista__proyectos{
+    list-style: none;
+}
+
+.titulo__proyecto{
+    font-family: montserrat-bold;
+    text-decoration: none;
+    color: var(--color-oscuro);
 }
