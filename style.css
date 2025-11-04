@@ -46,7 +46,7 @@
 
 .front {
     width: 100%;
-    min-height: 89vh;
+    min-height:82vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -140,26 +140,31 @@
 
 .container__proyectos {
     width: 100%;
-    min-height: 89vh;
+    min-height: 82vh;
     display: flex;
-    justify-content: space-around;
-    
+    justify-content: flex-end;
+    margin-top: 32px;
 }
 
 .proyectos__explicacion{
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+    gap: 12px;
+    position: fixed;
+    bottom: 48px;
+    left: 48px;
 }
 .proyectos__h1 {
     color: var(--color-oscuro);
     font-family: harabara;
-    font-size: 62px;
+    font-size: 32px;
 }
 
 .proyectos__texto{
     color: var(--color-oscuro);
     font-family: montserrat-bold;
+    font-size: 14px;
 }
 
 .lista__proyectos {
@@ -167,16 +172,28 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 36px;
+    gap: 48px;
+
+}
+.proyecto__titulo-tema{
+    
 
 }
 
 .titulo__proyecto {
-    font-family: montserrat-bold;
+    font-family: harabara;
     text-decoration: none;
     color: var(--color-oscuro);
-    font-size: 24px;
+    font-size: 62px;
 }
 .titulo__proyecto:hover {
-    color: var(--color-gris);
+    color: var(--color-oscuro-opacidad);
+}
+
+.titulo__proyecto-tema{
+    color: var(--color-oscuro);
+    font-family: montserrat-regular
+}
+.titulo__proyecto-tema:hover{
+    
 }
