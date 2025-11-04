@@ -55,6 +55,16 @@
 
 .menu {
     display: flex;
+    width: 100%;
+    align-items: center;
+}
+
+.isotipo-img {
+    width: 48px;
+}
+
+.exclamaciones {
+    display: flex;
     flex-direction: column;
     align-items: end;
     justify-content: end;
@@ -121,25 +131,52 @@
 
 /* proyectos.html */
 
-.container__proyectos{
+.main__proyectos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container__proyectos {
+    width: 100%;
+    min-height: 89vh;
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+.proyectos__explicacion{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.proyectos__h1 {
+    color: var(--color-oscuro);
+    font-family: harabara;
+    font-size: 62px;
+}
+
+.proyectos__texto{
+    color: var(--color-oscuro);
+    font-family: montserrat-bold;
+}
+
+.lista__proyectos {
+    list-style: none;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    gap: 36px;
+
 }
 
-.proyectos__h1{
-    color: var(--color-oscuro);
-    font-family: harabara;
-    font-size: 56px;
-}
-
-.lista__proyectos{
-    list-style: none;
-}
-
-.titulo__proyecto{
+.titulo__proyecto {
     font-family: montserrat-bold;
     text-decoration: none;
     color: var(--color-oscuro);
+    font-size: 24px;
+}
+.titulo__proyecto:hover {
+    color: var(--color-gris);
 }
