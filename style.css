@@ -38,10 +38,6 @@
     min-height: 100vh;
     background-color: var(--color-claro);
     padding: 36px;
-    /* display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; */
 }
 
 .front {
@@ -129,6 +125,79 @@
     }
 }
 
+/* menu nav */
+.isotipo__menu {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    color: var(--color-oscuro);
+}
+
+.isotipo__textos {
+    display: flex;
+    align-items: center;
+}
+
+.isotipo__menu-bamfer {
+    font-size: 24px;
+    font-family: harabara;
+}
+
+.isotipo__menu-nombre {
+    font-size: 16px;
+    font-family: montserrat-bold;
+}
+
+/* menu main */
+.menu__container {
+    width: 100%;
+    min-height: 82vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu__apartados-lista {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 48px;
+    width: 50%;
+}
+
+.menu__apartado{
+    list-style: none;
+    font-family: harabara;
+    font-size: 62px;
+}
+
+.menu__apartado-enlace{
+    color: var(--color-oscuro);
+    text-decoration: none;
+}
+.menu__apartado-enlace:hover{
+    color: var(--color-oscuro-opacidad);
+}
+
+.menu_contacto{
+    align-items: flex-start; 
+}
+
+.sobreMi_botones {
+    display: flex;
+    gap: 24px;
+    margin-top: 32px;
+}
+
+.sobreMi_contacto {
+    color: var(--color-oscuro);
+    font-family: montserrat-regular;
+    list-style: none;
+    display: flex;
+    gap: 24px;
+}
+
 /* proyectos.html */
 
 .main__proyectos {
@@ -207,11 +276,11 @@
 }
 
 .sobreMi__info {
-    width: 62%;
+    width: 56%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 32px;
+    gap: 8px;
 }
 
 .sobreMi__titulo {
@@ -226,23 +295,84 @@
     font-size: 16px;
 }
 
+/* botones */
+.sobreMi_botones {
+    display: flex;
+    gap: 24px;
+    margin-top: 32px;
+}
+
+/* cv boton */
 .CV_boton {
     background-color: var(--color-oscuro);
     color: var(--color-claro);
-    border: 0.2px solid var(--color-oscuro);
+    border: 1px solid var(--color-oscuro);
     border-radius: 0px 32px;
     padding: 15px;
     text-align: center;
-    width: 124px;
+    width: 172px;
     font-family: montserrat-regular;
+    font-size: 16px;
 }
 
 .CV_boton:hover {
-    background-color: var(--color-oscuro-opacidad);
-    border: none;
-    transform: scale(1.1);
+    background-color: rgba(255, 255, 255, 0);
+    border: 1px solid var(--color-oscuro);
+    color: var(--color-oscuro);
 }
 
+.sobreMi_contacto {
+    color: var(--color-oscuro);
+    font-family: montserrat-regular;
+    list-style: none;
+    display: flex;
+    gap: 24px;
+}
+
+/* parte de insta */
+.sobreMi-insta-deco {
+    background-color: rgba(255, 255, 255, 0);
+    color: var(--color-oscuro);
+    border: 1px solid var(--color-oscuro);
+    border-radius: 0px 32px;
+    padding: 12px;
+    text-align: center;
+    width: 132px;
+}
+
+.sobreMi-insta-deco:hover {
+    background-color: var(--color-oscuro-opacidad);
+    border: 1px solid var(--color-claro);
+}
+
+.sobreMi_link-insta {
+    text-decoration: none;
+    color: var(--color-oscuro);
+}
+
+/* parte del correo */
+.sobreMi-correo-deco {
+    background-color: rgba(255, 255, 255, 0);
+    color: var(--color-oscuro);
+    border: 1px solid var(--color-oscuro);
+    border-radius: 0px 32px;
+    padding: 12px;
+    text-align: center;
+    width: 116px;
+}
+
+.sobreMi-correo-deco:hover {
+    background-color: var(--color-oscuro-opacidad);
+    border: 1px solid var(--color-claro);
+}
+
+.sobreMi_link-correo {
+    text-decoration: none;
+    color: var(--color-oscuro);
+}
+
+
+/* parte de la imagen */
 .sobreMi__img {
     width: 40%;
     position: fixed;
@@ -252,4 +382,14 @@
 
 .img-sobreMi {
     height: 972px;
+}
+
+@media (max-width: 1450px) {
+    .img-sobreMi {
+        height: 662px;
+    }
+
+    .sobreMi__container {
+        width: 62%;
+    }
 }
