@@ -46,7 +46,7 @@
 
 .front {
     width: 100%;
-    min-height:82vh;
+    min-height: 82vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -146,7 +146,7 @@
     margin-top: 32px;
 }
 
-.proyectos__explicacion{
+.proyectos__explicacion {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -154,17 +154,19 @@
     position: fixed;
     bottom: 48px;
     left: 48px;
+    width: 40%;
 }
+
 .proyectos__h1 {
     color: var(--color-oscuro);
     font-family: harabara;
-    font-size: 32px;
+    font-size: 36px;
 }
 
-.proyectos__texto{
+.proyectos__texto {
     color: var(--color-oscuro);
-    font-family: montserrat-bold;
-    font-size: 14px;
+    font-family: montserrat-regular;
+    font-size: 16px;
 }
 
 .lista__proyectos {
@@ -173,12 +175,10 @@
     flex-direction: column;
     justify-content: center;
     gap: 48px;
-
+    width: 32%;
 }
-.proyecto__titulo-tema{
-    
 
-}
+.proyecto__titulo-tema {}
 
 .titulo__proyecto {
     font-family: harabara;
@@ -186,14 +186,70 @@
     color: var(--color-oscuro);
     font-size: 62px;
 }
+
 .titulo__proyecto:hover {
     color: var(--color-oscuro-opacidad);
 }
 
-.titulo__proyecto-tema{
+.tema__proyecto {
     color: var(--color-oscuro);
     font-family: montserrat-regular
 }
-.titulo__proyecto-tema:hover{
-    
+
+/* sobreMi.html */
+
+.sobreMi__container {
+    display: flex;
+    width: 82%;
+    height: 82vh;
+    justify-content: space-around;
+    gap: 48px;
+}
+
+.sobreMi__info {
+    width: 62%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 32px;
+}
+
+.sobreMi__titulo {
+    color: var(--color-oscuro);
+    font-family: harabara;
+    font-size: 36px;
+}
+
+.sobreMi__explicacion {
+    color: var(--color-oscuro);
+    font-family: montserrat-regular;
+    font-size: 16px;
+}
+
+.CV_boton {
+    background-color: var(--color-oscuro);
+    color: var(--color-claro);
+    border: 0.2px solid var(--color-oscuro);
+    border-radius: 0px 32px;
+    padding: 15px;
+    text-align: center;
+    width: 124px;
+    font-family: montserrat-regular;
+}
+
+.CV_boton:hover {
+    background-color: var(--color-oscuro-opacidad);
+    border: none;
+    transform: scale(1.1);
+}
+
+.sobreMi__img {
+    width: 40%;
+    position: fixed;
+    right: 0px;
+    bottom: -6px;
+}
+
+.img-sobreMi {
+    height: 972px;
 }
