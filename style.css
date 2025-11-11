@@ -196,12 +196,27 @@
     justify-content: center;
 }
 
+.sobreMI__enlace {
+    font-family: harabara;
+    font-size: 24px;
+    color: var(--color-oscuro);
+    position: fixed;
+    top: 36px;
+    right: 36px;
+    text-decoration: none;
+}
+
+.sobreMI__enlace:hover {
+    color: var(--color-gris);
+}
+
 .container__proyectos {
     width: 100%;
     min-height: 82vh;
     display: flex;
     justify-content: flex-end;
     margin-top: 32px;
+    gap: 56px;
 }
 
 .proyectos__explicacion {
@@ -211,8 +226,9 @@
     gap: 12px;
     position: fixed;
     bottom: 48px;
-    left: 48px;
+    left: 92px;
     width: 40%;
+    margin-right: 16px;
 }
 
 .proyectos__h1 {
@@ -229,6 +245,13 @@
     line-height: 1.5em;
 }
 
+.img__scroll {
+    width: 48px;
+    height: 48px;
+    position: fixed;
+    bottom: 56px;
+}
+
 .lista__proyectos {
     list-style: none;
     display: flex;
@@ -236,6 +259,7 @@
     justify-content: center;
     gap: 48px;
     width: 32%;
+    margin-top: 56px;
 }
 
 .titulo__proyecto {
@@ -251,10 +275,15 @@
 
 .tema__proyecto {
     color: var(--color-oscuro);
-    font-family: montserrat-regular
+    font-family: montserrat-regular;
+    letter-spacing: 1px;
 }
 
 @media (max-width: 1200px) {
+    .container__proyectos {
+        gap: 24px;
+    }
+
     .titulo__proyecto {
         font-size: 36px;
     }
@@ -272,9 +301,28 @@
     .proyectos__texto {
         font-size: 14px;
     }
+
+    .img__scroll {
+        width: 36px;
+        height: 36px;
+        right: 36px;
+    }
 }
 
 /* sobreMi.html */
+.proyectos__enlace {
+    font-family: harabara;
+    font-size: 24px;
+    color: var(--color-oscuro);
+    position: fixed;
+    top: 36px;
+    right: 36px;
+    text-decoration: none;
+}
+
+.proyectos__enlace:hover {
+    color: var(--color-gris);
+}
 
 .sobreMi__container {
     display: flex;
@@ -457,9 +505,24 @@
     }
 }
 
+@media (max-width: 730px) {
+    .sobreMi__img {
+        right: 392px;
+    }
 
-/* pagina marca 
-    Lettre*/
+    .img-sobreMi {
+        height: 624px;
+    }
+}
+
+/* pagina marca "plantilla"*/
+
+.isotipo-marcas {
+    width: 48px;
+    position: fixed;
+    top: 36px;
+    left: 36px;
+}
 
 .fondo__marca {
     width: 100%;
@@ -507,13 +570,11 @@
 }
 
 .tema__marca {
-    color: #6A0B37;
     font-family: montserrat-regular
 }
 
 .nombre__marca {
     font-family: harabara;
-    color: #6A0B37;
     font-size: 48px;
 }
 
@@ -529,6 +590,18 @@
 .img__marca-ord {
     width: 100%;
 }
+
+
+/* lettre */
+.tema__marca-lettre {
+    color: #6A0B37;
+}
+
+.nombre__marca-lettre {
+    color: #6A0B37;
+}
+
+
 
 
 @media (max-width: 2000px) {
