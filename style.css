@@ -570,7 +570,9 @@
 }
 
 .tema__marca {
-    font-family: montserrat-regular
+    font-family: montserrat-regular;
+    letter-spacing: 2px;
+    line-height: 1.5em;
 }
 
 .nombre__marca {
@@ -580,7 +582,9 @@
 
 .texto__marca {
     color: var(--color-gris);
-    font-family: montserrat-regular
+    font-family: montserrat-regular;
+    letter-spacing: 1px;
+    line-height: 1.3em;
 }
 
 .imagen__marca-ord {
@@ -596,12 +600,33 @@
 .tema__marca-lettre {
     color: #6A0B37;
 }
-
 .nombre__marca-lettre {
     color: #6A0B37;
 }
 
+/* sood */
+.tema__marca-sood {
+    color: #CA80AB;
+}
+.nombre__marca-sood {
+    color: #CA80AB;
+}
 
+/* vision activa */
+.tema__marca-vision {
+    color: #D08AFA;
+}
+.nombre__marca-vision {
+    color: #D08AFA;
+}
+
+/* etiqueta olimpo */
+/* .tema__marca-olimpo {
+    color: #82f425;
+}
+.nombre__marca-olimpo {
+    color: #82f425;
+} */
 
 
 @media (max-width: 2000px) {
