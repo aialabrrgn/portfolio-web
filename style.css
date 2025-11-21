@@ -742,6 +742,15 @@
     color: #5b32f9;
 }
 
+/* fatalitas */
+.tema__marca-fatalitas {
+    color: #7fe069;
+}
+
+.nombre__marca-fatalitas {
+    color: #7fe069;
+}
+
 
 @media (max-width: 2000px) {
     .imagen__marca-movil {
