@@ -751,6 +751,15 @@
     color: #7fe069;
 }
 
+/* elfilla */
+.tema__marca-elfilla {
+    color: #247c31;
+}
+
+.nombre__marca-elfilla {
+    color: #247c31;
+}
+
 
 @media (max-width: 2000px) {
     .imagen__marca-movil {
