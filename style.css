@@ -706,6 +706,15 @@
 }
 
 
+/* bamfer */
+.tema__marca-bamfer {
+    color: var(--color-oscuro);
+}
+
+.nombre__marca-bamfer {
+    color: var(--color-oscuro);
+}
+
 /* lettre */
 .tema__marca-lettre {
     color: #6A0B37;
@@ -758,6 +767,15 @@
 
 .nombre__marca-elfilla {
     color: #247c31;
+}
+
+/* sonor */
+.tema__marca-sonor {
+    color: #6210d1;
+}
+
+.nombre__marca-sonor {
+    color: #6210d1;
 }
 
 
