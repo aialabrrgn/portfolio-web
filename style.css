@@ -487,6 +487,28 @@
     gap: 24px;
 }
 
+/* parte gitHub */
+.sobreMi-gitHub-deco {
+    background-color: rgba(255, 255, 255, 0);
+    color: var(--color-oscuro);
+    border: 1px solid var(--color-oscuro);
+    border-radius: 0px 32px;
+    padding: 12px;
+    text-align: center;
+    width: 132px;
+    height: 46px;
+}
+
+.sobreMi-gitHub-deco:hover {
+    background-color: var(--color-oscuro-opacidad);
+    border: 1px solid var(--color-claro);
+}
+
+.sobreMi_link-gitHub {
+    text-decoration: none;
+    color: var(--color-oscuro);
+}
+
 /* parte de insta */
 .sobreMi-insta-deco {
     background-color: rgba(255, 255, 255, 0);
@@ -508,6 +530,8 @@
     text-decoration: none;
     color: var(--color-oscuro);
 }
+
+
 
 /* parte del correo */
 .sobreMi-correo-deco {
@@ -584,6 +608,11 @@
         height: 48px;
     }
 
+    .sobreMi-gitHub-deco {
+        height: 48px;
+        width: 176px;
+    }
+
     .sobreMi-insta-deco {
         height: 48px;
         width: 176px;
@@ -622,6 +651,20 @@
 
     .img-sobreMi {
         height: 556px;
+    }
+}
+
+@media (max-width: 600px) {
+    .sobreMi__container {
+        align-items: self-end;
+    }
+
+    .sobreMi__img {
+        display: none;
+    }
+
+    .img-sobreMi {
+        display: none;
     }
 }
 
@@ -777,6 +820,23 @@
 .nombre__marca-sonor {
     color: #6210d1;
 }
+
+
+/* fresh cervezas */
+.fresh__cont-texto {
+    color: var(--color-gris);
+    font-family: montserrat-regular;
+    letter-spacing: 1px;
+    line-height: 1.3em;
+}
+
+.fresh__cont1 {}
+
+.fresh__cont2 {}
+
+.fresh__cont3 {}
+
+.fresh__cont4 {}
 
 
 @media (max-width: 2000px) {
