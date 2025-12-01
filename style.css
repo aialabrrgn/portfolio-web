@@ -89,9 +89,10 @@
 }
 
 .link {
-    color: var(--color-oscuro-opacidad);
+    color: var(--color-oscuro);
     text-decoration: none;
     list-style: none;
+    font-size: 20px;
 }
 
 .link:hover {
@@ -569,7 +570,7 @@
 }
 
 
-/* @media (max-width: 2000px) {
+@media (max-width: 2000px) {
     .img-sobreMi {
         height: 662px;
     }
@@ -581,7 +582,7 @@
     .movil--CV_boton {
         display: none;
     }
-} */
+}
 
 @media (max-width: 1200px) {
     .sobreMi__info {
@@ -834,27 +835,92 @@
     color: var(--color-gris);
     font-family: montserrat-regular;
     letter-spacing: 1px;
-    line-height: 1.3em;
+    line-height: 1.3em;    
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
 }
 
+
 .fresh__cont {
+    width: 100%;
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.fresh__flecha{
+    color: var(--color-gris);
+    font-family: montserrat-bold;
+    font-size: 24px;
+    color: var(--color-oscuro);
+    background-color: var(--color-claro);
+    padding: 8px;
+    border-radius: 50%;
+}
+
+.fresh__cont1 {
     width: 100%;
     display: flex;
     gap: 72px;
     justify-content: center;
 }
 
-.fresh__cont-texto {
+.fresh__cont1-texto {
     width: 100vw;
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
 }
 
-.img__cont {
+.img__cont1 {
     width: 96%;
 }
 
+.fresh__cont2 {
+    width: 100%;
+    display: flex;
+    gap: 72px;
+    justify-content: center;
+}
+
+.fresh__cont2-texto {
+    width: 196vw;
+}
+
+.img__cont2 {
+    width: 96%;
+}
+
+.fresh__cont3 {
+    width: 100%;
+    display: flex;
+    gap: 72px;
+    justify-content: center;
+}
+
+.fresh__cont3-texto {
+    width: 100vw;
+}
+
+.img__cont3 {
+    width: 106%;
+}
+
+
+.fresh__cont4 {
+    width: 100%;
+    display: flex;
+    gap: 100px;
+    justify-content: center;
+}
+
+.fresh__cont4-texto {
+    width: 162vw;
+}
+
+.img__cont4 {
+    width: 96%;
+}
 
 @media (max-width: 2000px) {
     .imagen__marca-movil {
