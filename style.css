@@ -823,6 +823,13 @@
 
 
 /* fresh cervezas */
+.datos__fresh {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
 .fresh__cont-texto {
     color: var(--color-gris);
     font-family: montserrat-regular;
@@ -830,13 +837,23 @@
     line-height: 1.3em;
 }
 
-.fresh__cont1 {}
+.fresh__cont {
+    width: 100%;
+    display: flex;
+    gap: 72px;
+    justify-content: center;
+}
 
-.fresh__cont2 {}
+.fresh__cont-texto {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
 
-.fresh__cont3 {}
-
-.fresh__cont4 {}
+.img__cont {
+    width: 96%;
+}
 
 
 @media (max-width: 2000px) {
