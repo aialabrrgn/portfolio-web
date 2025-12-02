@@ -824,6 +824,10 @@
 
 
 /* fresh cervezas */
+.card__fresh {
+    overflow: hidden;
+}
+
 .datos__fresh {
     width: 100%;
     display: flex;
@@ -835,7 +839,7 @@
     color: var(--color-gris);
     font-family: montserrat-regular;
     letter-spacing: 1px;
-    line-height: 1.3em;    
+    line-height: 1.3em;
     display: flex;
     flex-direction: column;
     gap: 24px;
@@ -851,7 +855,7 @@
 }
 
 
-.fresh__flecha{
+.fresh__flecha {
     color: var(--color-gris);
     font-family: montserrat-bold;
     font-size: 24px;
