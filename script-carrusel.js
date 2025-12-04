@@ -25,3 +25,46 @@ punto4.addEventListener("click", () => {
     moverCarrusel(3)
 })
 
+const pt= document.querySelector(".carrusel__pt")
+const pt1= document.querySelector(".carrusel__pt1")
+const pt2= document.querySelector(".carrusel__pt2")
+const pt3= document.querySelector(".carrusel__pt3")
+const pt4= document.querySelector(".carrusel__pt4")
+
+
+// pt1
+pt1.addEventListener("click", () => {
+    pt1.classList.add('carrusel__pt-activado');
+});
+
+pt1.addEventListener("click", () => {
+    pt1.classList.remove('.carrusel__pt-activado');
+});
+
+// pt2
+pt2.addEventListener("click", () => {
+    pt2.classList.add('carrusel__pt-activado');
+});
+
+pt2.addEventListener("click", () => {
+    pt1.classList.remove('.carrusel__pt-activado');
+});
+
+// pt3
+pt3.addEventListener("click", () => {
+    pt3.classList.add('carrusel__pt-activado');
+});
+
+pt3.addEventListener("click", () => {
+    pt1.classList.remove('.carrusel__pt-activado');
+});
+
+
+// pt4
+pt4.addEventListener("click", () => {
+    pt4.classList.add('carrusel__pt-activado');
+});
+
+pt4.addEventListener("click", () => {
+    pt1.classList.remove('.carrusel__pt-activado');
+});
