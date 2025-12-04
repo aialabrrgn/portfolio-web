@@ -226,7 +226,7 @@
     border-radius: 16px;
     /* border: 1px solid var(--color-oscuro); */
     position: fixed;
-    top: 156px;
+    top: 124px;
     left: 92px;
 }
 
@@ -366,6 +366,20 @@
     letter-spacing: 1px;
 }
 
+
+
+@media (max-width: 2000px) {
+    .proyectos__imgCont {
+        width: 40%;
+        height: 36%;
+        border-radius: 16px;
+        position: fixed;
+        top: 108px;
+        left: 92px;
+    }
+}
+
+
 @media (max-width: 1200px) {
     .container__proyectos {
         gap: 24px;
@@ -398,12 +412,21 @@
 
 @media(max-width: 900px) {
     .proyectos__imgCont {
-        height: 36%;
+        height: 30%;
     }
 }
 
 
-@media(max-width: 650px) {
+@media(max-width: 750px) {
+    .titulo__proyecto {
+        font-size: 27px;
+    }
+
+    .tema__proyecto {
+        font-size: 12px;
+        letter-spacing: 1px;
+    }
+
     .proyectos__imgCont {
         display: none;
     }
@@ -751,12 +774,21 @@
 
 
 /* bamfer */
+
+.fondo__marca-bamfer {
+    min-height: 116vh;
+}
+
 .tema__marca-bamfer {
     color: var(--color-oscuro);
 }
 
 .nombre__marca-bamfer {
     color: var(--color-oscuro);
+}
+
+.imagen__marca-ord-bamfer {
+    transform: translateY(16%);
 }
 
 /* lettre */
@@ -845,9 +877,9 @@
     gap: 24px;
 }
 
-
-.fresh__cont {
+.fresh__contenedor {
     width: 100%;
+<<<<<<< HEAD
     display: flex;
     gap: 16px;
     justify-content: center;
@@ -863,6 +895,11 @@
     background-color: var(--color-claro);
     padding: 8px;
     border-radius: 50%;
+=======
+    height: 42vh;
+    overflow: hidden;
+    /* background-color: #D08AFA; */
+>>>>>>> bfa653e78ccd30531dfa65ec0e31fecc72538b2e
 }
 
 .fresh__cont1 {
@@ -879,6 +916,31 @@
 .img__cont1 {
     width: 96%;
 }
+
+
+.carrusel__fresh{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    position: fixed;
+    bottom: 136px;
+    left: 336px;
+}
+
+.carrusel__flecha{
+    height: 22px;
+}
+
+.carrusel__pt{
+    width: 16px;
+    height: 16px;
+    border: 1px solid #0719ff;
+    border-radius: 50%;
+}
+
+/* .carrusel__pt-activo{
+    background-color: var(--color-oscuro);
+} */
 
 .fresh__cont2 {
     width: 100%;
@@ -926,12 +988,7 @@
     width: 96%;
 }
 
-@media (max-width: 2000px) {
-    .imagen__marca-movil {
-        display: none;
-    }
-
-}
+@media (max-width: 2000px) {}
 
 @media (max-width: 1200px) {
     .datos-img__marca {
