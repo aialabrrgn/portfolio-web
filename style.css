@@ -113,6 +113,18 @@
         font-size: 24px;
     }
 }
+@media (max-width: 600px) {
+    .logo {
+        height: 128px;
+    }
+
+    .sub1 {
+        font-size: 18px;
+    }
+    .link {
+    font-size: 16px;
+}
+}
 
 /* menu nav */
 .isotipo__menu {
@@ -496,12 +508,21 @@
     font-family: montserrat-regular;
     font-size: 16px;
 }
-
 .CV_boton:hover {
     background-color: rgba(255, 255, 255, 0);
     border: 1px solid var(--color-oscuro);
     color: var(--color-oscuro);
 }
+
+.CV_btn {
+    width: 192px;
+    color: var(--color-claro);
+    text-decoration: none;
+}
+.CV_btn:hover {
+    color: var(--color-oscuro);
+}
+
 
 .sobreMi_contacto {
     color: var(--color-oscuro);
@@ -682,7 +703,12 @@
     .sobreMi__container {
         align-items: self-end;
     }
-
+    .fondo__sobreMi{
+        min-height: 136vh;
+    }
+    .sobreMi__info{
+        height: 36%;
+    }
     .sobreMi__img {
         display: none;
     }
@@ -932,7 +958,7 @@
 }
 
 .fresh__cont1-texto {
-    width: 186vw;
+    width: 86vw;
 }
 
 .img__cont1 {
@@ -947,7 +973,7 @@
 }
 
 .fresh__cont2-texto {
-    width: 108vw;
+    width: 86vw;
 }
 
 .img__cont2 {
@@ -962,7 +988,7 @@
 }
 
 .fresh__cont3-texto {
-    width: 108vw;
+    width: 62vw;
 }
 
 .img__cont3 {
@@ -978,7 +1004,7 @@
 }
 
 .fresh__cont4-texto {
-    width: 108vw;
+    width: 86vw;
 }
 
 .img__cont4 {
@@ -998,7 +1024,7 @@
 
 @media (max-width: 1200px) {
     .card__fresh {
-        height: 82vh;
+        height: 90vh;
     }
 
     .fresh__cont-texto {
@@ -1027,17 +1053,19 @@
     }
 
     .imagen__marca-movil {
-        display: block;
-        width: 100%;
+        display: flex;
+        width: 56%;
+        margin-left: 26%;
     }
 
     .img__marca-movil {
-        width: 100%;
+        display: flex;
+        width: 86%;
     }
 
     .fresh__cont {
         flex-direction: column;
-        gap: 36px;
+        gap: 28px;
         justify-content: start;
     }
 
@@ -1046,7 +1074,26 @@
     }
 
     .carrusel__fresh {
-        bottom: 36px;
+        bottom: 2px;
         left: calc(44% - 10px);
     }
+}
+
+@media (max-width: 800px) {
+    .fresh__cont-texto {
+        width: 56vw;
+    }
+}
+@media (max-width: 600px) {
+    .fresh__cont-texto {
+        width: 48vw;
+    }
+    .imagen__marca-movil {
+        display: none;
+    }
+
+    .img__marca-movil {
+        display: none;
+    }
+
 }
