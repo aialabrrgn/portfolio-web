@@ -59,6 +59,7 @@
 .isotipo-img {
     width: 48px;
     position: fixed;
+    z-index: 1000;
 }
 
 
@@ -99,31 +100,6 @@
     color: var(--color-oscuro);
     transform: scale(1.15);
     transition: 0.5s ease;
-}
-
-
-@media (max-width: 800px) {
-    .logo {
-        height: 156px;
-    }
-
-    .sub1 {
-        text-align: center;
-        font-family: montserrat-bold;
-        font-size: 24px;
-    }
-}
-@media (max-width: 600px) {
-    .logo {
-        height: 128px;
-    }
-
-    .sub1 {
-        font-size: 18px;
-    }
-    .link {
-    font-size: 16px;
-}
 }
 
 /* menu nav */
@@ -217,6 +193,7 @@
     top: 36px;
     right: 36px;
     text-decoration: none;
+    z-index: 1000;
 }
 
 .sobreMI__enlace:hover {
@@ -236,7 +213,6 @@
     width: 40%;
     height: 48%;
     border-radius: 16px;
-    /* border: 1px solid var(--color-oscuro); */
     position: fixed;
     top: 124px;
     left: 92px;
@@ -244,75 +220,16 @@
 
 /* mouseover logos marcas */
 
-.proyectos__imgCont-bamfer {
-    background-image: url(img/marcas/portadas/1_bamfer_portada.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-}
-
-.proyectos__imgCont-lettre {
-    background-image: url(img/marcas/portadas/2-lettre_portada.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-}
-
-.proyectos__imgCont-sood {
-    background-image: url(img/marcas/portadas/3-sood_portada.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-}
-
-.proyectos__imgCont-activa {
-    background-image: url(img/marcas/portadas/4-activa_portada.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-}
-
-.proyectos__imgCont-olimpo {
-    background-image: url(img/marcas/portadas/5-olimpo_portada.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-}
-
-.proyectos__imgCont-gravity {
-    background-image: url(img/marcas/portadas/6-gravity_portada.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-}
-
-.proyectos__imgCont-fatalitas {
-    background-image: url(img/marcas/portadas/7-fatalitas_portada.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-}
-
-.proyectos__imgCont-elfilla {
-    background-image: url(img/marcas/portadas/8-elfilla_portada.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-}
-
-.proyectos__imgCont-sonor {
-    background-image: url(img/marcas/portadas/9_sonor_portada.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-}
-
-.proyectos__imgCont-fresh {
-    background-image: url(img/marcas/portadas/10_fresh_portada.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-}
+.proyectos__imgCont-bamfer { background-image: url(img/marcas/portadas/1_bamfer_portada.jpg); background-repeat: no-repeat; background-position: center; background-size: cover; }
+.proyectos__imgCont-lettre { background-image: url(img/marcas/portadas/2-lettre_portada.jpg); background-repeat: no-repeat; background-position: center; background-size: cover; }
+.proyectos__imgCont-sood { background-image: url(img/marcas/portadas/3-sood_portada.jpg); background-repeat: no-repeat; background-position: center; background-size: cover; }
+.proyectos__imgCont-activa { background-image: url(img/marcas/portadas/4-activa_portada.jpg); background-repeat: no-repeat; background-position: center; background-size: cover; }
+.proyectos__imgCont-olimpo { background-image: url(img/marcas/portadas/5-olimpo_portada.jpg); background-repeat: no-repeat; background-position: center; background-size: cover; }
+.proyectos__imgCont-gravity { background-image: url(img/marcas/portadas/6-gravity_portada.jpg); background-repeat: no-repeat; background-position: center; background-size: cover; }
+.proyectos__imgCont-fatalitas { background-image: url(img/marcas/portadas/7-fatalitas_portada.jpg); background-repeat: no-repeat; background-position: center; background-size: cover; }
+.proyectos__imgCont-elfilla { background-image: url(img/marcas/portadas/8-elfilla_portada.jpg); background-repeat: no-repeat; background-position: center; background-size: cover; }
+.proyectos__imgCont-sonor { background-image: url(img/marcas/portadas/9_sonor_portada.jpg); background-repeat: no-repeat; background-position: center; background-size: cover; }
+.proyectos__imgCont-fresh { background-image: url(img/marcas/portadas/10_fresh_portada.jpg); background-repeat: no-repeat; background-position: center; background-size: cover; }
 
 
 
@@ -379,72 +296,6 @@
 }
 
 
-
-@media (max-width: 2000px) {
-    .proyectos__imgCont {
-        width: 40%;
-        height: 36%;
-        border-radius: 16px;
-        position: fixed;
-        top: 108px;
-        left: 92px;
-    }
-}
-
-
-@media (max-width: 1200px) {
-    .container__proyectos {
-        gap: 24px;
-    }
-
-    .titulo__proyecto {
-        font-size: 36px;
-    }
-
-    .tema__proyecto {
-        font-size: 14px;
-        letter-spacing: 1px;
-
-    }
-
-    .proyectos__h1 {
-        font-size: 32px;
-    }
-
-    .proyectos__texto {
-        font-size: 14px;
-    }
-
-    .img__scroll {
-        width: 36px;
-        height: 36px;
-        right: 36px;
-    }
-}
-
-@media(max-width: 900px) {
-    .proyectos__imgCont {
-        height: 30%;
-    }
-}
-
-
-@media(max-width: 750px) {
-    .titulo__proyecto {
-        font-size: 27px;
-    }
-
-    .tema__proyecto {
-        font-size: 12px;
-        letter-spacing: 1px;
-    }
-
-    .proyectos__imgCont {
-        display: none;
-    }
-}
-
-
 /* sobreMi.html */
 .proyectos__enlace {
     font-family: harabara;
@@ -454,6 +305,7 @@
     top: 36px;
     right: 36px;
     text-decoration: none;
+    z-index: 1000;
 }
 
 .proyectos__enlace:hover {
@@ -613,111 +465,6 @@
     height: 972px;
 }
 
-
-@media (max-width: 2000px) {
-    .img-sobreMi {
-        height: 662px;
-    }
-
-    .sobreMi__container {
-        width: 62%;
-    }
-
-    .movil--CV_boton {
-        display: none;
-    }
-}
-
-@media (max-width: 1200px) {
-    .sobreMi__info {
-        width: 82%;
-    }
-
-    .sobreMi_botones {
-        display: flex;
-        flex-direction: column;
-        gap: 16px;
-    }
-
-    .sobreMi__explicacion {
-        font-size: 14px;
-    }
-
-    .sobreMi_contacto {
-        display: flex;
-        flex-direction: column;
-        gap: 16px;
-    }
-
-    .CV_boton {
-        height: 48px;
-    }
-
-    .sobreMi-gitHub-deco {
-        height: 48px;
-        width: 176px;
-    }
-
-    .sobreMi-insta-deco {
-        height: 48px;
-        width: 176px;
-    }
-
-    .sobreMi-correo-deco {
-        height: 48px;
-        width: 176px;
-    }
-
-    .sobreMi__img {
-        width: 0px;
-        right: 462px;
-        bottom: -6px;
-    }
-
-    .img-sobreMi {
-        height: 756px;
-    }
-}
-
-@media (max-width: 900px) {
-    .sobreMi__img {
-        right: 392px;
-    }
-
-    .img-sobreMi {
-        height: 624px;
-    }
-}
-
-@media (max-width: 700px) {
-    .sobreMi__img {
-        right: 392px;
-    }
-
-    .img-sobreMi {
-        height: 556px;
-    }
-}
-
-@media (max-width: 600px) {
-    .sobreMi__container {
-        align-items: self-end;
-    }
-    .fondo__sobreMi{
-        min-height: 136vh;
-    }
-    .sobreMi__info{
-        height: 36%;
-    }
-    .sobreMi__img {
-        display: none;
-    }
-
-    .img-sobreMi {
-        display: none;
-    }
-}
-
 /* pagina marca "plantilla"*/
 
 .isotipo-marcas {
@@ -725,6 +472,7 @@
     position: fixed;
     top: 36px;
     left: 36px;
+    z-index: 1000;
 }
 
 .fondo__marca {
@@ -805,295 +553,171 @@
     min-height: 116vh;
 }
 
-.tema__marca-bamfer {
-    color: var(--color-oscuro);
-}
-
-.nombre__marca-bamfer {
-    color: var(--color-oscuro);
-}
-
-.imagen__marca-ord-bamfer {
-    transform: translateY(16%);
-}
+.tema__marca-bamfer { color: var(--color-oscuro); }
+.nombre__marca-bamfer { color: var(--color-oscuro); }
+.imagen__marca-ord-bamfer { transform: translateY(16%); }
 
 /* lettre */
-.tema__marca-lettre {
-    color: #6A0B37;
-}
-
-.nombre__marca-lettre {
-    color: #6A0B37;
-}
+.tema__marca-lettre { color: #6A0B37; }
+.nombre__marca-lettre { color: #6A0B37; }
 
 /* sood */
-.tema__marca-sood {
-    color: #CA80AB;
-}
-
-.nombre__marca-sood {
-    color: #CA80AB;
-}
+.tema__marca-sood { color: #CA80AB; }
+.nombre__marca-sood { color: #CA80AB; }
 
 /* vision activa */
-.tema__marca-vision {
-    color: #D08AFA;
-}
-
-.nombre__marca-vision {
-    color: #D08AFA;
-}
+.tema__marca-vision { color: #D08AFA; }
+.nombre__marca-vision { color: #D08AFA; }
 
 /* no gravity */
-.tema__marca-gravity {
-    color: #5b32f9;
-}
-
-.nombre__marca-gravity {
-    color: #5b32f9;
-}
+.tema__marca-gravity { color: #5b32f9; }
+.nombre__marca-gravity { color: #5b32f9; }
 
 /* fatalitas */
-.tema__marca-fatalitas {
-    color: #7fe069;
-}
-
-.nombre__marca-fatalitas {
-    color: #7fe069;
-}
+.tema__marca-fatalitas { color: #7fe069; }
+.nombre__marca-fatalitas { color: #7fe069; }
 
 /* elfilla */
-.tema__marca-elfilla {
-    color: #247c31;
-}
-
-.nombre__marca-elfilla {
-    color: #247c31;
-}
+.tema__marca-elfilla { color: #247c31; }
+.nombre__marca-elfilla { color: #247c31; }
 
 /* sonor */
-.tema__marca-sonor {
-    color: #6210d1;
-}
-
-.nombre__marca-sonor {
-    color: #6210d1;
-}
+.tema__marca-sonor { color: #6210d1; }
+.nombre__marca-sonor { color: #6210d1; }
 
 
 /* fresh cervezas */
-.card__fresh {
-    overflow: hidden;
-    height: 90vh;
-}
+.card__fresh { overflow: hidden; height: 90vh; }
+.datos__fresh { width: 100%; display: flex; flex-direction: column; gap: 24px; }
+.fresh__cont-texto { color: var(--color-gris); font-family: montserrat-regular; letter-spacing: 1px; line-height: 1.3em; display: flex; gap: 24px; }
+.fresh__contenedor { width: 100%; height: 62vh; overflow: hidden; position: relative; }
+.fresh__cont { height: 100%; overflow: hidden; transition: 0.3s ease transform; }
+.carrusel__fresh { display: flex; align-items: center; gap: 8px; position: absolute; cursor: pointer; z-index: 100; bottom: 0; left: calc(50% - 10px); }
+.carrusel__pt { width: 16px; height: 16px; border: 1px solid #0719ff; border-radius: 50%; }
+.carrusel__pt1 { background-color: var(--color-oscuro); }
+.carrusel__pt-activado { background-color: var(--color-oscuro); }
+.carrusel__pt-desactivado { border: 1px solid #0719ff; }
 
-.datos__fresh {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
-}
+.fresh__cont1 { width: 100%; display: flex; gap: 56px; justify-content: center; }
+.fresh__cont1-texto { width: 56vw; }
+.img__cont1 { width: 96%; }
+.fresh__cont2 { width: 100%; display: flex; gap: 76px; justify-content: center; }
+.fresh__cont2-texto { width: 56vw; }
+.img__cont2 { width: 88%; }
+.fresh__cont3 { width: 100%; display: flex; gap: 56px; justify-content: center; }
+.fresh__cont3-texto { width: 56vw; }
+.img__cont3 { width: 108%; }
+.fresh__cont4 { width: 100%; display: flex; gap: 56px; justify-content: center; }
+.fresh__cont4-texto { width: 56vw; }
+.img__cont4 { width: 82%; }
 
-.fresh__cont-texto {
-    color: var(--color-gris);
-    font-family: montserrat-regular;
-    letter-spacing: 1px;
-    line-height: 1.3em;
-    display: flex;
-    gap: 24px;
-}
+.imagen__marca-movil { display: none; }
+.img__marca-movil { display: none; }
 
-.fresh__contenedor {
-    width: 100%;
-    height: 62vh;
-    overflow: hidden;
-    /* border: 2px solid black; */
-    /* background-color: #D08AFA; */
-    position: relative;
-}
+/* --- NUEVO SISTEMA RESPONSIVE (Reparado para móvil) --- */
 
-.fresh__cont {
-    height: 100%;
-    /* transform: translateY(-200%); */
-    overflow: hidden;
-    transition: 0.3s ease transform;
-}
+@media (max-width: 1024px) {
+    /* Ajustes generales */
+    .fondo { padding: 20px; }
+    
+    /* Index */
+    .isotipo-img { position: relative; display: block; margin: 0 auto 30px auto; top: 0; left: 0; }
+    .logo { height: 120px; max-width: 100%; object-fit: contain; }
+    .sub1 { font-size: 1.1rem; line-height: 1.4; padding: 0 10px; }
+    .links { flex-direction: column; align-items: center; gap: 20px; margin-top: 40px; }
+    .front { min-height: auto; padding-top: 20px; }
 
+    /* Menús de lista */
+    .menu__apartados-lista { width: 100%; gap: 24px; }
+    .menu__apartado { font-size: 42px; text-align: center; }
 
-.carrusel__fresh {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    position: absolute;
-    cursor: pointer;
-    z-index: 100;
-    bottom: 0;
-    left: calc(50% - 10px);
-}
-
-.carrusel__pt {
-    width: 16px;
-    height: 16px;
-    border: 1px solid #0719ff;
-    border-radius: 50%;
-}
-
-.carrusel__pt1 {
-    background-color: var(--color-oscuro);
-}
-
-.carrusel__pt-activado {
-    background-color: var(--color-oscuro);
-}
-
-.carrusel__pt-desactivado {
-    border: 1px solid #0719ff;
-}
-
-.fresh__cont1 {
-    width: 100%;
-    display: flex;
-    gap: 56px;
-    justify-content: center;
-}
-
-.fresh__cont1-texto {
-    width: 56vw;
-}
-
-.img__cont1 {
-    width: 96%;
-}
-
-.fresh__cont2 {
-    width: 100%;
-    display: flex;
-    gap: 76px;
-    justify-content: center;
-}
-
-.fresh__cont2-texto {
-    width: 56vw;
-}
-
-.img__cont2 {
-    width: 88%;
-}
-
-.fresh__cont3 {
-    width: 100%;
-    display: flex;
-    gap: 56px;
-    justify-content: center;
-}
-
-.fresh__cont3-texto {
-    width: 56vw;
-}
-
-.img__cont3 {
-    width: 108%;
-}
-
-
-.fresh__cont4 {
-    width: 100%;
-    display: flex;
-    gap: 56px;
-    justify-content: center;
-}
-
-.fresh__cont4-texto {
-    width: 56vw;
-}
-
-.img__cont4 {
-    width: 82%;
-}
-
-@media (max-width: 2000px) {
-
-    .imagen__marca-movil {
-        display: none;
-    }
-
-    .img__marca-movil {
-        display: none;
-    }
-}
-
-@media (max-width: 1200px) {
-    .card__fresh {
-        height: 90vh;
-    }
-
-    .fresh__cont-texto {
-        display: flex;
+    /* Proyectos.html en Móvil */
+    .container__proyectos {
         flex-direction: column;
-        gap: 24px;
+        justify-content: flex-start;
+        align-items: center;
+        margin-top: 20px;
+        gap: 30px;
     }
 
-    .datos-img__marca {
+    /* En móvil ocultamos la imagen fija porque el hover no existe */
+    .proyectos__imgCont { display: none; }
+
+    /* Los textos ya no son fijos, fluyen con el scroll */
+    .proyectos__explicacion {
+        position: relative;
         width: 100%;
-        display: flex;
-        flex-direction: column;
-        gap: 42px;
+        left: 0;
+        bottom: 0;
+        margin-right: 0;
+        text-align: center;
+        padding: 20px 0;
         justify-content: center;
     }
 
-    .datos__marca {
+    .lista__proyectos {
         width: 100%;
-        display: flex;
+        margin-top: 0;
+        text-align: center;
+        gap: 32px;
+    }
+
+    .titulo__proyecto { font-size: 38px; }
+    .tema__proyecto { font-size: 14px; }
+    .img__scroll { display: none; }
+    .sobreMI__enlace { position: relative; top: 0; right: 0; margin-bottom: 20px; display: block; text-align: center; }
+
+    /* SobreMi.html en Móvil */
+    .sobreMi__container {
         flex-direction: column;
-        gap: 24px;
+        width: 100%;
+        height: auto;
+        gap: 40px;
+        align-items: center;
     }
 
-    .imagen__marca-ord {
-        display: none;
-    }
+    .sobreMi__info { width: 100%; text-align: center; align-items: center; }
+    .sobreMi__titulo { font-size: 32px; }
+    .sobreMi__explicacion { font-size: 14px; letter-spacing: 1px; line-height: 1.6em; }
 
-    .imagen__marca-movil {
-        display: flex;
-        width: 56%;
-        margin-left: 26%;
-    }
-
-    .img__marca-movil {
-        display: flex;
-        width: 86%;
-    }
-
-    .fresh__cont {
+    .sobreMi_botones, .sobreMi_contacto {
         flex-direction: column;
-        gap: 28px;
-        justify-content: start;
+        gap: 15px;
+        width: 100%;
+        align-items: center;
     }
 
-    .fresh__cont-texto {
-        width: 62vw;
+    .proyectos__enlace { position: relative; top: 0; right: 0; display: block; text-align: center; margin-bottom: 30px; }
+
+    .sobreMi__img {
+        position: relative;
+        width: 100%;
+        max-width: 320px;
+        right: auto;
+        bottom: auto;
+        margin: 0 auto;
     }
 
-    .carrusel__fresh {
-        bottom: 2px;
-        left: calc(44% - 10px);
-    }
-}
+    .img-sobreMi { height: auto; width: 100%; }
 
-@media (max-width: 800px) {
-    .fresh__cont-texto {
-        width: 56vw;
+    /* Plantilla Marcas en Móvil */
+    .card__marca { width: 100%; padding: 24px; min-height: auto; border-radius: 20px; }
+    .datos-img__marca { flex-direction: column; gap: 40px; }
+    .datos__marca, .imagen__marca-ord { width: 100%; text-align: center; }
+    .nombre__marca { font-size: 32px; }
+    .isotipo-marcas { position: relative; top: 0; left: 0; margin-bottom: 20px; }
+    
+    /* Fresh Carrusel Móvil */
+    .card__fresh { height: auto; }
+    .fresh__contenedor { height: auto; min-height: 350px; }
+    .fresh__cont1, .fresh__cont2, .fresh__cont3, .fresh__cont4 { 
+        flex-direction: column; 
+        gap: 20px; 
     }
-}
-@media (max-width: 600px) {
-    .fresh__cont-texto {
-        width: 48vw;
+    .fresh__cont1-texto, .fresh__cont2-texto, .fresh__cont3-texto, .fresh__cont4-texto { 
+        width: 100%; 
+        text-align: center; 
     }
-    .imagen__marca-movil {
-        display: none;
-    }
-
-    .img__marca-movil {
-        display: none;
-    }
-
+    .fresh__cont-texto { flex-direction: column; }
+    .carrusel__fresh { position: relative; margin-top: 20px; left: 0; transform: none; justify-content: center; }
 }
