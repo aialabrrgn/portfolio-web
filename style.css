@@ -93,7 +93,7 @@
     color: var(--color-oscuro);
     text-decoration: none;
     list-style: none;
-    font-size: 20px;
+    font-size: 22px;
 }
 
 .link:hover {
@@ -211,7 +211,7 @@
 
 .proyectos__imgCont {
     width: 40%;
-    height: 48%;
+    height: 42%;
     border-radius: 16px;
     position: fixed;
     top: 124px;
@@ -255,9 +255,9 @@
 .proyectos__texto {
     color: var(--color-oscuro);
     font-family: montserrat-regular;
-    font-size: 16px;
-    letter-spacing: 2px;
-    line-height: 1.5em;
+    font-size: 14px;
+    letter-spacing: 1px;
+    line-height: 1.6em;
 }
 
 .img__scroll {
@@ -326,6 +326,7 @@
     flex-direction: column;
     justify-content: center;
     gap: 16px;
+
 }
 
 .sobreMi__titulo {
@@ -339,6 +340,7 @@
     font-family: montserrat-regular;
     letter-spacing: 2px;
     line-height: 1.5em;
+    margin-bottom: 32px;
 }
 
 /* botones */
@@ -382,6 +384,7 @@
     list-style: none;
     display: flex;
     gap: 24px;
+    margin-top: -26px;
 }
 
 /* parte gitHub */
@@ -392,7 +395,7 @@
     border-radius: 0px 32px;
     padding: 12px;
     text-align: center;
-    width: 132px;
+    width: 172px;
     height: 46px;
 }
 
@@ -414,7 +417,7 @@
     border-radius: 0px 32px;
     padding: 12px;
     text-align: center;
-    width: 132px;
+    width: 172px;
     height: 46px;
 }
 
@@ -428,8 +431,6 @@
     color: var(--color-oscuro);
 }
 
-
-
 /* parte del correo */
 .sobreMi-correo-deco {
     background-color: rgba(255, 255, 255, 0);
@@ -438,7 +439,7 @@
     border-radius: 0px 32px;
     padding: 12px;
     text-align: center;
-    width: 116px;
+    width: 172px;
     height: 46px;
 }
 
@@ -462,7 +463,9 @@
 }
 
 .img-sobreMi {
-    height: 972px;
+    height: 708px;
+    position: relative;
+    right: -112px;
 }
 
 /* pagina marca "plantilla"*/
@@ -544,6 +547,7 @@
 
 .img__marca-ord {
     width: 100%;
+    
 }
 
 
@@ -555,7 +559,7 @@
 
 .tema__marca-bamfer { color: var(--color-oscuro); }
 .nombre__marca-bamfer { color: var(--color-oscuro); }
-.imagen__marca-ord-bamfer { transform: translateY(16%); }
+.imagen__marca-ord-bamfer { transform: translateY(16%); position: relative; bottom: 48px;}
 
 /* lettre */
 .tema__marca-lettre { color: #6A0B37; }
@@ -592,7 +596,11 @@
 .fresh__cont-texto { color: var(--color-gris); font-family: montserrat-regular; letter-spacing: 1px; line-height: 1.3em; display: flex; gap: 24px; }
 .fresh__contenedor { width: 100%; height: 62vh; overflow: hidden; position: relative; }
 .fresh__cont { height: 100%; overflow: hidden; transition: 0.3s ease transform; }
-.carrusel__fresh { display: flex; align-items: center; gap: 8px; position: absolute; cursor: pointer; z-index: 100; bottom: 0; left: calc(50% - 10px); }
+.carrusel__fresh {     position: absolute;
+    margin-top: 436px;
+    left: 44%;
+    display: flex;
+    gap: 8px; }
 .carrusel__pt { width: 16px; height: 16px; border: 1px solid #0719ff; border-radius: 50%; }
 .carrusel__pt1 { background-color: var(--color-oscuro); }
 .carrusel__pt-activado { background-color: var(--color-oscuro); }
@@ -621,11 +629,11 @@
     .fondo { padding: 20px; }
     
     /* Index */
-    .isotipo-img { position: relative; display: block; margin: 0 auto 30px auto; top: 0; left: 0; }
+    .isotipo-img { display: block; position: absolute; top: 16px; left: 26px; }
     .logo { height: 120px; max-width: 100%; object-fit: contain; }
     .sub1 { font-size: 1.1rem; line-height: 1.4; padding: 0 10px; }
-    .links { flex-direction: column; align-items: center; gap: 20px; margin-top: 40px; }
-    .front { min-height: auto; padding-top: 20px; }
+    .links { align-items: center; gap: 32px; margin-top: 40px; }
+    .front { min-height: auto; padding-top: 20px; margin-top: 42%; }
 
     /* Menús de lista */
     .menu__apartados-lista { width: 100%; gap: 24px; }
@@ -649,6 +657,7 @@
         width: 100%;
         left: 0;
         bottom: 0;
+        top: 52px;
         margin-right: 0;
         text-align: center;
         padding: 20px 0;
@@ -657,7 +666,7 @@
 
     .lista__proyectos {
         width: 100%;
-        margin-top: 0;
+        margin-top: 28px;
         text-align: center;
         gap: 32px;
     }
@@ -665,7 +674,8 @@
     .titulo__proyecto { font-size: 38px; }
     .tema__proyecto { font-size: 14px; }
     .img__scroll { display: none; }
-    .sobreMI__enlace { position: relative; top: 0; right: 0; margin-bottom: 20px; display: block; text-align: center; }
+    .sobreMI__enlace { position: absolute; top: 32px; right: 26px; margin-bottom: 20px; display: block; text-align: center;
+    }
 
     /* SobreMi.html en Móvil */
     .sobreMi__container {
@@ -676,8 +686,8 @@
         align-items: center;
     }
 
-    .sobreMi__info { width: 100%; text-align: center; align-items: center; }
-    .sobreMi__titulo { font-size: 32px; }
+    .sobreMi__info { width: 100%; text-align: center; align-items: center; position: relative; top: 90px;}
+    .sobreMi__titulo { font-size: 36px; }
     .sobreMi__explicacion { font-size: 14px; letter-spacing: 1px; line-height: 1.6em; }
 
     .sobreMi_botones, .sobreMi_contacto {
@@ -687,7 +697,8 @@
         align-items: center;
     }
 
-    .proyectos__enlace { position: relative; top: 0; right: 0; display: block; text-align: center; margin-bottom: 30px; }
+    .proyectos__enlace { position: absolute; top: 32px; right: 26px; margin-bottom: 20px; display: block; text-align: center;
+    }
 
     .sobreMi__img {
         position: relative;
@@ -698,15 +709,15 @@
         margin: 0 auto;
     }
 
-    .img-sobreMi { height: auto; width: 100%; }
+    .img-sobreMi { height: auto; width: 100%; position: relative; bottom: -26px; margin-top: 72px; right: 0%;}
 
     /* Plantilla Marcas en Móvil */
-    .card__marca { width: 100%; padding: 24px; min-height: auto; border-radius: 20px; }
+    .card__marca { width: 100%; padding: 24px; min-height: auto; border-radius: 20px;     margin-top: 48px; }
     .datos-img__marca { flex-direction: column; gap: 40px; }
     .datos__marca, .imagen__marca-ord { width: 100%; text-align: center; }
-    .nombre__marca { font-size: 32px; }
+    .nombre__marca { font-size: 32px; text-align: center; }
     .isotipo-marcas { position: relative; top: 0; left: 0; margin-bottom: 20px; }
-    
+    .tema__marca {text-align: center;}
     /* Fresh Carrusel Móvil */
     .card__fresh { height: auto; }
     .fresh__contenedor { height: auto; min-height: 350px; }
@@ -718,6 +729,8 @@
         width: 100%; 
         text-align: center; 
     }
-    .fresh__cont-texto { flex-direction: column; }
-    .carrusel__fresh { position: relative; margin-top: 20px; left: 0; transform: none; justify-content: center; }
+    .fresh__cont-texto { flex-direction: column; margin-top: 48px;}
+    .fresh__cont1-texto { margin-top: 0px;}
+
+    .carrusel__fresh { display: none; }
 }

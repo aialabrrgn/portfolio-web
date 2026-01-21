@@ -68,3 +68,23 @@ pt4.addEventListener("click", () => {
 pt4.addEventListener("click", () => {
     pt1.classList.remove('.carrusel__pt-activado');
 });
+
+// document.addEventListener("DOMContentLoaded", () => {
+//     const puntos = document.querySelectorAll(".carrusel__pt");
+//     const slides = document.querySelectorAll(".fresh__cont");
+
+//     puntos.forEach((punto, index) => {
+//         punto.addEventListener("click", () => {
+//             console.log("Clic en punto:", index + 1); // Verás esto en la consola
+            
+//             // 1. Mover los slides
+//             slides.forEach((slide) => {
+//                 slide.style.transform = `translateY(-${index * 100}%)`;
+//             });
+
+//             // 2. Actualizar clases de los puntos
+//             puntos.forEach(p => p.classList.remove("carrusel__pt-activado"));
+//             punto.classList.add("carrusel__pt-activado");
+//         });
+//     });
+// });
