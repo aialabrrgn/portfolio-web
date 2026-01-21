@@ -93,7 +93,7 @@
     color: var(--color-oscuro);
     text-decoration: none;
     list-style: none;
-    font-size: 22px;
+    font-size: 18px;
 }
 
 .link:hover {
@@ -463,9 +463,9 @@
 }
 
 .img-sobreMi {
-    height: 708px;
+    height: 832px;
     position: relative;
-    right: -112px;
+    right: 22px;
 }
 
 /* pagina marca "plantilla"*/
